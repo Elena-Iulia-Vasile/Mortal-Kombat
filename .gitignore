@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Arena/bin/Debug/net6.0
+/Arena/obj
+/Fighter/bin/Debug/net6.0
+/Fighter/obj
+/FighterNotifier/obj
+/Mortal-Kombat/bin/Debug/net6.0
+/Mortal-Kombat/obj
+/UnitTestsArena/obj
+/UnitTestsFighter/obj
