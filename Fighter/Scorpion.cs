@@ -27,6 +27,7 @@
 
         public override void Punch(BaseFighter fighter)
         {
+            // seamana cu alte functii Punch din alti eroi. DRY
             Random random = new Random();
             int randomNumber = random.Next(15, 25);
             fighter.Life -= randomNumber;
@@ -35,10 +36,13 @@
 
         public override void DoubleHit(BaseFighter fighter)
         {
+            // seamana cu alte functii DoubleHit din alti eroi. DRY
             Random random = new Random();
             int randomNumber = random.Next(10, 16);
             fighter.Power -= randomNumber / 100 * this.Power;
             int randomNumber2 = random.Next(8, 12);
+            // imi e greu sa inteleg logica actiunii avand in vedere numele celor doua 
+            // variabile randomNumber si randomNumber2
             fighter.HealthPoints -= randomNumber2 / 100 * this.HealthPoints;
             fighter.Life -= randomNumber2;
             notifier.Notifie(fighter, "DoubleHit");

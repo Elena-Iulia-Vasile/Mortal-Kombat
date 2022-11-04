@@ -1,3 +1,4 @@
+using Fighter;
 using Fighters;
 
 namespace UnitTestsFighters
@@ -12,6 +13,7 @@ namespace UnitTestsFighters
         [Fact]
         public void FighterBasic_ConstructorThatInitialiseAndCreateClass()
         {
+            // nu sunt sigur ca ai inteles ce sunt unit testele
             //Arrange
             var sut = new FighterBasic("Fighter");
 
@@ -38,7 +40,7 @@ namespace UnitTestsFighters
         public void FighterJax_ConstructorThatInitialiseAndCreateObject()
         {
             //Arrange
-            var sut = new FighterJax("Jax");
+            var sut = new Jax("Jax");
 
             //Act
             var actual = sut.Name == "Sonya" && sut.Life == 100 && sut.Power == 80 && sut.HealthPoints == 100;

@@ -19,6 +19,7 @@
 
         public override void Punch(BaseFighter fighter)
         {
+            //functia asta mi se pare almost identica cu Punch din FighterBasic. DRY
             Random random = new Random();
             int randomNumber = random.Next(1, 6);
             fighter.Life -= randomNumber;
@@ -27,6 +28,7 @@
 
         public override void DoubleHit(BaseFighter fighter)
         {
+            //functia asta mi se pare almost identica cu DoubleHit din FighterBasic. DRY
             Random random = new Random();
             int randomNumber = random.Next(5, 11);
             fighter.Power -= randomNumber / 100 * this.Power;
@@ -38,6 +40,7 @@
 
         public override void Kick(BaseFighter fighter)
         {
+            //functia asta mi se pare almost identica cu Kick din FighterBasic. DRY
             if (this.Power >= 30 && this.HealthPoints >= 60)
             {
                 fighter.Power -= 0.25f * this.Power;
