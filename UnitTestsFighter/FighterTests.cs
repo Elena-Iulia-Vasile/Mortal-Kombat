@@ -1,5 +1,4 @@
 using Fighter;
-using Fighters;
 
 namespace UnitTestsFighters
 {
