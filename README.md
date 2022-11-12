@@ -1,5 +1,5 @@
 # Mortal-Kombat
 
-Internship PIA 2020
+Internship PIA 2022
 
 Project started at PIA 
